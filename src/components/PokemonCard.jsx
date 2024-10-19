@@ -18,7 +18,7 @@ export default function PokemonCard({name}) {
     <>
     
     <Link to={'/poke'} state={{name:title, img:image}}><div
-     className='h-fit border-2 border-white w-fit px-2 py-2 rounded-lg shadow-md shadow-blue-300 hover:cursor-pointer hover:shadow-lg hover:shadow-yellow-300'>
+     className='h-fit border-2 border-white w-fit px-2 py-2 rounded-lg shadow-md shadow-blue-300 hover:cursor-pointer hover:shadow-lg hover:shadow-yellow-300 hover:scale-110 transition-all duration-200'>
         <img className='object-contain w-72 h-72' src={image} alt="not-found" />
         <div className='text-white text-center bg-gray-700'>{title.toLocaleUpperCase()}</div>
     </div></Link>
